@@ -1,0 +1,36 @@
+[user]
+	name = Dario Veltri
+	email = dario.veltri@freiheit.com
+[color]
+        ui = true
+[alias]
+        br = branch
+        pp = pull --prune
+        cm = checkout main
+        fe = fetch --prune
+        pr = pull --rebase --autostash origin main
+        cb = checkout -b
+        ca = commit --amend
+        co = commit -m
+        pf = push --force
+        cp = cherry-pick
+        c = checkout
+        a = add .
+        pub = push -u origin HEAD
+        fresh = !git cm && git fe && git pp
+        st = status -sb
+[push]
+        default = simple
+[pull]
+        rebase = true
+[rebase]
+        autosquash = true
+[rerere]
+        enabled = true
+[diff]
+        renames = copies
+        algorithm = patience
+        compactionHeuristic = true
+        submodule = log
+[init]
+        defaultBranch = main

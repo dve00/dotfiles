@@ -1,0 +1,13 @@
+# First, ignore everything
+*
+
+# Then, un-ignore directories you want to track (so Git can look inside them)
+!.gitconfig/
+!.config/nvim/*
+!.config/tmux/*
+!.config/starship.toml
+
+# Finally, un-ignore specific files or file types you want to track
+!.gitignore
+!.gitconfig
+!.zshrc
