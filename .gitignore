@@ -11,4 +11,3 @@
 # Finally, un-ignore specific files or file types you want to track
 !.gitignore
 !.gitconfig
-!.zshrc
