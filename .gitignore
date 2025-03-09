@@ -6,6 +6,7 @@
 !.config/nvim/*
 !.config/tmux/*
 !.config/starship.toml
+!dev/devtools/*
 
 # Finally, un-ignore specific files or file types you want to track
 !.gitignore
