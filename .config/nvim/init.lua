@@ -675,14 +675,23 @@ require('lazy').setup({
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`ts_ls`) will work just fine
-        volar = {},
-        ts_ls = {
+        volar = {
+          root_dir = vim.fs.root(0, 'package.json'),
+          filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+          init_options = {
+            vue = {
+              -- disable hybrid mode
+              hybridMode = false,
+            },
+          },
+        },
+        --[[ts_ls = {
           init_options = {
             plugins = {
               {
-                name = '@vue/typescript-plugin',
-                location = '/usr/local/lib/node_modules/@vue/typescript-plugin',
-                languages = { 'javascript', 'typescript', 'vue' },
+                 name = '@vue/typescript-plugin',
+                 location = '/usr/local/lib/node_modules/@vue/typescript-plugin',
+                 languages = { 'javascript', 'typescript', 'vue' },
               },
             },
           },
@@ -691,7 +700,7 @@ require('lazy').setup({
             'typescript',
             'vue',
           },
-        },
+        },]]
         --
 
         lua_ls = {

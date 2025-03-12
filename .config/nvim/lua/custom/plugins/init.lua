@@ -114,6 +114,9 @@ return {
     end,
   },
   {
+    'editorconfig/editorconfig-vim',
+  },
+  {
     'ThePrimeagen/harpoon',
     branch = 'harpoon2',
     dependencies = { 'nvim-lua/plenary.nvim' },
