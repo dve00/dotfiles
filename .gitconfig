@@ -38,3 +38,5 @@
         submodule = log
 [init]
         defaultBranch = main
+[core]
+        editor = nvim -f
