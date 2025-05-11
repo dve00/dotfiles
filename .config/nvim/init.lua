@@ -717,6 +717,7 @@ require('lazy').setup({
         ['vue'] = { 'prettier', 'eslint' },
         ['python'] = { 'black' },
         ['lua'] = { 'stylua' },
+        ['go'] = { 'gofmt' },
       }
       g.ale_fix_on_save = 1
       g.ale_python_pylint_use_global = 0
