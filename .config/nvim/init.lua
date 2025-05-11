@@ -964,6 +964,9 @@ require('lazy').setup({
 
 require 'theme'
 
+vim.api.nvim_set_hl(0, 'LineNrAbove', { fg = '#c6a0f6', bold = false })
+vim.api.nvim_set_hl(0, 'LineNr', { fg = '#c6a0f6', bold = true })
+vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = '#c6a0f6', bold = false })
 -- clipboard
 vim.opt.clipboard:append 'unnamedplus'
 
